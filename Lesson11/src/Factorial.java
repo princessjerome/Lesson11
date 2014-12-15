@@ -9,9 +9,8 @@ public class Factorial {
     //kr not able to use long
     double x;
     
-    while(true){
-        System.out.println("Enter a number between from 1-15: ");
-        x = kr.readDouble();
+    while(true){        
+        x = kr.readDouble("Enter a number between from 1-15: ");
         if(x <= 15 && x >= 1)break;
     }
     System.out.println(x + " factorial is equal to " + factorial(x));
